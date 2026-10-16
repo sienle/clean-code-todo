@@ -1,0 +1,5 @@
+# Dependencies lock file
+package-lock.json
+
+# GitHub workflows — do not modify
+.github/
