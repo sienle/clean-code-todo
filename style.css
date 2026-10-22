@@ -4,24 +4,24 @@ body {
   color: #333;
   font-family: Lato, sans-serif;
 }
-.aaa {
+.preview {
   width: 500px;
   margin: 0 auto;
   text-align: right;
 }
-.aaa img {
+.preview img {
   width: 100%;
 }
-.aaa .more_inf {
+.preview .more-info {
   font-family: fantasy, cursive;
 }
 
 @media (max-width: 768px) {
-  .aaa {
+  .preview {
     text-align: center;
   }
 }
-.centered-main-page-element {
+.todo-app {
   display: block;
   width: 500px;
   margin: 0 auto 0;
@@ -31,7 +31,7 @@ body {
   display: inline-block;
   flex-grow: 1;
 }
-.task-row-wrapper {
+.task-input-row {
   display: flex;
 }
 ul {
