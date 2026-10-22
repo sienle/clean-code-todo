@@ -1,17 +1,19 @@
-/* Basic Style */
 body {
   background-color: #f8f8f8;
   color: #333;
   font-family: Lato, sans-serif;
 }
+
 .preview {
   width: 500px;
   margin: 0 auto;
   text-align: right;
 }
+
 .preview img {
   width: 100%;
 }
+
 .preview .more-info {
   font-family: fantasy, cursive;
 }
@@ -21,19 +23,23 @@ body {
     text-align: center;
   }
 }
+
 .todo-app {
   display: block;
   width: 500px;
   margin: 0 auto 0;
 }
+
 .task {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
 }
+
 .task-input-row {
   display: flex;
 }
+
 ul {
   margin: 0;
   padding: 0px;
@@ -43,6 +49,7 @@ input,
 button {
   outline: none;
 }
+
 button {
   background: none;
   border: 0px;
@@ -55,7 +62,7 @@ button {
 button:hover {
   color: #3a3a3a;
 }
-/* Heading */
+
 h1,
 h2,
 label[for='new-task'] {
@@ -67,6 +74,7 @@ label[for='new-task'] {
   margin: 0;
   text-transform: uppercase;
 }
+
 input[type='text'] {
   margin: 0;
   font-size: 18px;
@@ -79,6 +87,7 @@ input[type='text'] {
   font-family: Lato, sans-serif;
   color: #888;
 }
+
 input[type='text']:focus {
   color: #333;
 }
@@ -102,6 +111,7 @@ li {
   justify-content: space-between;
   align-items: center;
 }
+
 li > * {
   vertical-align: middle;
 }
@@ -109,20 +119,24 @@ li > * {
 li > input[type='checkbox'] {
   margin: 0 10px;
 }
+
 li > label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
+
 li > input[type='text'] {
   width: 226px;
 }
+
 button.delete img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
+
 button.delete img:hover {
   transform: rotateZ(0);
 }
