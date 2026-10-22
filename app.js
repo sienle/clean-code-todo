@@ -47,9 +47,9 @@ const editTask = function () {
   const editInput = taskItem.querySelector('input[type=text]');
   const label = taskItem.querySelector('label');
   const editBtn = taskItem.querySelector('.edit');
-  const hasClass = taskItem.classList.contains('editMode');
+  const isEditing = taskItem.classList.contains('editMode');
 
-  if (hasClass) {
+  if (isEditing) {
     label.innerText = editInput.value;
     editBtn.innerText = 'Edit';
   } else {
