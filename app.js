@@ -7,35 +7,28 @@ const createTaskElement = function (taskText) {
   const taskItem = document.createElement('li');
 
   const checkbox = document.createElement('input');
+  checkbox.type = 'checkbox';
 
   const label = document.createElement('label');
-
-  const editInput = document.createElement('input');
-
-  const editButton = document.createElement('button');
-
-  const deleteButton = document.createElement('button');
-  const deleteIcon = document.createElement('img');
-
   label.innerText = taskText;
   label.className = 'task';
 
-  checkbox.type = 'checkbox';
+  const editInput = document.createElement('input');
   editInput.type = 'text';
   editInput.className = 'task';
 
+  const editButton = document.createElement('button');
   editButton.innerText = 'Edit';
   editButton.className = 'edit';
 
-  deleteButton.className = 'delete';
+  const deleteIcon = document.createElement('img');
   deleteIcon.src = './remove.svg';
+
+  const deleteButton = document.createElement('button');
+  deleteButton.className = 'delete';
   deleteButton.appendChild(deleteIcon);
 
-  taskItem.appendChild(checkbox);
-  taskItem.appendChild(label);
-  taskItem.appendChild(editInput);
-  taskItem.appendChild(editButton);
-  taskItem.appendChild(deleteButton);
+  taskItem.append(checkbox, label, editInput, editButton, deleteButton);
   return taskItem;
 };
 
@@ -51,11 +44,11 @@ const addTask = function () {
 
 const editTask = function () {
   const taskItem = this.parentNode;
-
   const editInput = taskItem.querySelector('input[type=text]');
   const label = taskItem.querySelector('label');
   const editBtn = taskItem.querySelector('.edit');
   const hasClass = taskItem.classList.contains('editMode');
+
   if (hasClass) {
     label.innerText = editInput.value;
     editBtn.innerText = 'Edit';
