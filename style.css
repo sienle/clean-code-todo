@@ -7,7 +7,6 @@ body {
 .aaa {
   width: 500px;
   margin: 0 auto;
-  display: block;
   text-align: right;
 }
 .aaa img {
@@ -39,10 +38,7 @@ ul {
   margin: 0;
   padding: 0px;
 }
-li,
-h3 {
-  list-style: none;
-}
+
 input,
 button {
   outline: none;
