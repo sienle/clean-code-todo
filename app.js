@@ -109,4 +109,4 @@ const bindTasksInList = function (taskList, checkboxHandler) {
 bindTasksInList(incompleteTasksList, completeTask);
 bindTasksInList(completedTasksList, reopenTask);
 
-//prevent creation of empty tasks.
+//TODO: prevent creation of empty tasks (containing only whitespaces).
