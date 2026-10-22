@@ -140,7 +140,6 @@ li > input[type='text'] {
   transform: rotateZ(0);
 }
 
-/* Completed */
 #completed-tasks label {
   text-decoration: line-through;
   color: #888;
